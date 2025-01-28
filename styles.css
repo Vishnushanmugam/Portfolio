@@ -268,14 +268,12 @@ small {
 	position:fixed;
 	z-index: 55;
 	margin-top: -2cm;
-	width: 35cm;
 }
 section{
 	height: inherit;
-	/* background-color: red; */
 }
 .nav {
-	width: 100%;
+	width: 225%;
 	padding: 0 1rem;
 }
 .nav .container {
@@ -283,7 +281,6 @@ section{
 	align-items: center;
 	justify-content: space-between;
 	padding: 0.85rem 2rem;
-	/* background: var(--secondary-clr); */
 	margin-block-start: 1.15rem;
 	border-radius: 0.5rem;
 	font-size: 1.4rem;
@@ -307,6 +304,7 @@ section{
 	display: flex;
 	align-items: center;
 	gap: 5rem;
+	color: var(--accent-clr);
 }
 
 .nav-links {
@@ -315,7 +313,7 @@ section{
 }
 
 .nav-links:hover {
-	color: var(--accent-clr);
+	color: white;
 }
 
 .social-nav {
@@ -382,7 +380,6 @@ section{
 .hero-btn-container {
 	margin-block-start: 5rem;
 	display: flex;
-	/* align-items: center; */
 }
 
 .hire-btn {
@@ -443,7 +440,6 @@ section{
 	margin-block-start: var(--section-mt);
 	background: var(--secondary-clr);
 	padding: var(--section-mt) 1rem;
-	height: 19cm;
 }
 
 .about-me .container {
@@ -463,7 +459,6 @@ section{
 		0px 0px 5.3px rgba(0, 0, 0, 0.008), 0px 0px 10px rgba(0, 0, 0, 0.01),
 		0px 0px 17.9px rgba(0, 0, 0, 0.012), 0px 0px 33.4px rgba(0, 0, 0, 0.014),
 		0px 0px 80px rgba(0, 0, 0, 0.02);
-	/* filter: brightness(0.8); */
 }
 
 .about {
@@ -573,12 +568,14 @@ section{
 	margin-bottom: 3.2cm;
 }
 
-.Others h3 {
+.Others .hhf {
 	font-size: 3rem;
 }
 .Others #EC{
 	margin-top: 1cm;
+	font-size: 3rem;
 }
+
 h5{
 	color: var(--accent-clr);
 }
@@ -688,20 +685,12 @@ h5{
 	gap: 1rem;
 }
 
-.Education_Certification h4 {
-	font-size: clamp(1.5rem, 2vw, 2rem);
-}
-
 .Education_Certification ul {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
 	color: var(--accent-clr);
 	font-size: clamp(1.15rem, 1vw, 1.3rem);
-}
-
-.Education_Certification h4{
-	margin-top: -25px;
 }
 
 .Education_Certification p {
@@ -817,8 +806,9 @@ h5{
 	.skip-to-content {
 		display: none;
 	}
-
+	
 	.nav {
+		width: 325%;
 		position: relative;
 		z-index: 1;
 	}
@@ -936,19 +926,19 @@ h5{
 	}
 
 	.Experience {
-        margin-block-start: 5rem; /* Adjusting the margin for better spacing on smaller screens */
+        margin-block-start: 5rem;
     }
 
     .Experience h3 {
-        font-size: 2.5rem; /* Reduce font size for better readability */
+        font-size: 2.5rem;
     }
 
     .Experience {
         padding-block-start: calc(var(--section-mt) / 2);
         display: grid;
-        grid-template-columns: 1fr; /* One column for smaller screens */
-        gap: 2rem; /* Reduced gap between items */
-        max-width: 100%; /* Ensure the grid uses full available width */
+        grid-template-columns: 1fr; 
+        gap: 2rem;
+        max-width: 100%;
         margin: 0 auto;
     }
 
@@ -961,7 +951,7 @@ h5{
         background: var(--secondary-clr);
         border-radius: 0.3rem;
         overflow: hidden;
-        font-size: 1.25rem; /* Slightly reduced font size for mobile */
+        font-size: 1.25rem; 
         box-shadow: 0px 0px 2.2px rgba(0, 0, 0, 0.011),
                     0px 0px 5.3px rgba(0, 0, 0, 0.016), 0px 0px 10px rgba(0, 0, 0, 0.02),
                     0px 0px 17.9px rgba(0, 0, 0, 0.024), 0px 0px 33.4px rgba(0, 0, 0, 0.029),
@@ -976,11 +966,11 @@ h5{
 
     .Experience a img {
         object-fit: cover;
-        height: 250px; /* Reduced image size for mobile */
+        height: 250px; 
     }
 
     .Experience div {
-        padding: 1.5rem; /* Reduced padding for mobile */
+        padding: 1.5rem; 
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -988,7 +978,7 @@ h5{
     }
 
     .Experience h4 {
-        font-size: clamp(1.25rem, 4vw, 1.75rem); /* Adjust font size based on viewport */
+        font-size: clamp(1.25rem, 4vw, 1.75rem);
     }
 
     .Experience ul {
@@ -996,22 +986,20 @@ h5{
         align-items: center;
         gap: 1rem;
         color: var(--accent-clr);
-        font-size: clamp(1rem, 2.5vw, 1.2rem); /* Adjusted font size */
+        font-size: clamp(1rem, 2.5vw, 1.2rem); 
     }
 
     .Experience p {
-        font-size: clamp(1rem, 2.5vw, 1.2rem); /* Adjusted font size */
+        font-size: clamp(1rem, 2.5vw, 1.2rem); 
     }
 
     /* Education Section */
-    .Education {
+    .Education_Certification {
         display: grid;
         margin: 20px 0;
-        /* margin-left: 1cm; */
-        /* margin-right: 1cm;*/
     }
 
-    .Others .Education {
+    .Others .Education_Certification {
         height: 100%;
         display: grid;
         flex-direction: column;
@@ -1020,7 +1008,7 @@ h5{
         background: var(--secondary-clr);
         border-radius: 0.3rem;
         overflow: hidden;
-        font-size: 1.25rem; /* Slightly reduced font size for mobile */
+        font-size: 1.25rem; 
         box-shadow: 0px 0px 2.2px rgba(0, 0, 0, 0.011),
                     0px 0px 5.3px rgba(0, 0, 0, 0.016), 0px 0px 10px rgba(0, 0, 0, 0.02),
                     0px 0px 17.9px rgba(0, 0, 0, 0.024), 0px 0px 33.4px rgba(0, 0, 0, 0.029),
@@ -1028,28 +1016,28 @@ h5{
         transition: background 300ms ease-in-out;
     }
 
-    .Education:hover {
+    .Education_Certification:hover {
         background: transparent;
         box-shadow: 0px 0px 1px var(--other-clr);
     }
 
-    .Education h4 {
+    .Education_Certification h4 {
         margin: 5px 0;
-        font-size: clamp(1.3rem, 3.5vw, 1.8rem); /* Adjusted font size */
+        font-size: clamp(1.3rem, 3.5vw, 1.8rem);
         color: #08a36f;
     }
 
-    .Education p {
-        font-size: 1rem;
+    .Education_Certification p {
+        font-size: 1.5rem;
         color: #666;
     }
 
-    .Education li {
+    .Education_Certification li {
         margin-left: 0.6cm;
         margin-bottom: 1cm;
     }
 
-    .Education div {
+    .Education_Certification div {
         padding: 1rem; /* Adjusted padding */
         display: grid;
         flex-direction: column;
@@ -1062,7 +1050,7 @@ h5{
         font-size: clamp(1.5rem, 3vw, 2rem);
     }
 
-    .Education ul {
+    .Education_Certification ul {
         display: grid;
         align-items: center;
         gap: 1rem;
