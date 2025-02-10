@@ -502,6 +502,8 @@ section{
 	font-size: clamp(1.15rem, 1vw, 1.3rem);
 	width: 4cm;
 	border-style:groove;
+	color: var(--primary-clr);
+	background: var(--tag-clr);
 }
 
 /*******************
