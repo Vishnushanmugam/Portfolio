@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;800;900&display=swap');
 
 :root {
-	--primary-clr: hsl(0, 0%, 0%);
+	--primary-clr: #222222;
 	--secondary-clr: hsl(0, 0%, 11%);
 	--other-clr: hsl(0, 0%, 61%);
 	--tag-clr: hsl(0, 0%, 55%);
@@ -227,7 +227,7 @@ h3 {
 	bottom: -2px;
 	width: 100%;
 	height: 1.5px;
-	background: var(--accent-clr);
+	background: whitesmoke;
 
 	transform: scaleX(0);
 	transform-origin: left;
@@ -280,6 +280,7 @@ section{
 	display:flex;
 	align-items: center;
 	justify-content: space-between;
+	background-color:#666;
 	padding: 0.85rem 2rem;
 	margin-block-start: 1.15rem;
 	border-radius: 0.5rem;
@@ -304,7 +305,7 @@ section{
 	display: flex;
 	align-items: center;
 	gap: 5rem;
-	color: var(--accent-clr);
+	color: white;
 }
 
 .nav-links {
@@ -335,8 +336,8 @@ section{
 }
 
 .social-nav a:hover {
-	background: var(--accent-other-clr);
-	color: var(--secondary-clr);
+	background: white;
+	color: black;
 }
 
 /*******************
@@ -486,6 +487,21 @@ section{
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 3.2rem 1rem;
+}
+.skill{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 2rem;
+	padding-block-start: 2rem;
+}
+.skill li {
+	padding: 0.2rem 1rem;
+	align-items: center;
+	border-radius: 2px;
+	font-size: clamp(1.15rem, 1vw, 1.3rem);
+	width: 4cm;
+	border-style:groove;
 }
 
 /*******************
@@ -788,7 +804,7 @@ h5{
 /* responsiveness */
 @media screen and (max-width: 50em) {
 	body::after {
-		position: absolute;
+		position: fixed;
 		content: '';
 		top: 0;
 		left: 0;
