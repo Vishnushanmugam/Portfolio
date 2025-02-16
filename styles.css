@@ -273,7 +273,7 @@ section{
 	height: inherit;
 }
 .nav {
-	width: 225%;
+	width: 220%;
 	padding: 0 1rem;
 }
 .nav .container {
@@ -826,7 +826,7 @@ h5{
 	}
 	
 	.nav {
-		width: 300%;
+		width: 290%;
 		position: relative;
 		z-index: 1;
 	}
