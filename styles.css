@@ -479,6 +479,10 @@ section{
 	padding: 4rem 1rem;
 	height: 20cm;
 }
+
+.and{
+	color:var(--accent-clr);
+}
 .my-skills div{
 	margin-top: 3.5cm;
 }
@@ -716,6 +720,9 @@ h5{
 	color: var(--accent-clr);
 }
 
+.Education_Certification h4 {
+	font-size: clamp(1.5rem, 2vw, 2rem);
+}
 .Education_Certification a{
 	margin-top: -25px;
 	color: var(--accent-clr);
